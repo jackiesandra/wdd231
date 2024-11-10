@@ -1,0 +1,286 @@
+/* Reset margins and fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styling */
+body {
+    background-color: #E8EEF1;
+    color: #333;
+}
+
+/* Header styling */
+.header {
+    background-color: #24478F;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Profile container styling */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.profile-img {
+    border-radius: 0%;
+    width: 170px;
+    height: auto;
+    background-color: #24478F;
+    padding: 5px;
+}
+
+/* Title */
+h1 {
+    margin: 0;
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #FFEEAD;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #111;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo hover para los enlaces */
+nav a:hover {
+    background-color: #FFEEAD;
+    color: #111;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+    display: none; /* No mostrar por defecto en pantallas grandes */
+    font-size: 30px;
+    color: #FFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Main container for Course Work and Location */
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Styling for the container that holds Course Work and the Location image */
+.course-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.coursework {
+    background-color: #24478F;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 45%;
+    margin-top: 10px;
+}
+
+.coursework h2 {
+    background-color: #24478F;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+}
+
+.course-list {
+    background-color: #FFF;
+    color: #333;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.course-item:last-child {
+    border-bottom: none;
+}
+
+.credits {
+    color: #888;
+    font-style: italic;
+}
+
+.total-credits {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #F9F9F9;
+    border-top: 2px solid #24478F;
+    border-radius: 0 0 8px 8px;
+    color: #333;
+}
+
+.credits-total {
+    color: #333;
+}
+
+/* Location section styling */
+.location {
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+.location h2 {
+    margin-bottom: 10px;
+    background-color: #24478F;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.location-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 0 0 8px 8px;
+    margin-top: 10px;
+}
+
+.location p {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Certificate styling */
+.certificates {
+    background-color: #24478F;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin: 10px 0;
+}
+
+.filter-btn {
+    background-color: #111;
+    color: #FFF;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.course-list .course-btn {
+    background-color: #AA4934;
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cse {
+    background-color: #D1D7E0;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #24478F;
+    color: #FFF;
+    text-align: center;
+    padding: 15px;
+}
+
+#last-update {
+    color: #FFEEAD;
+    font-style: italic;
+}
+
+/* Menú en pantallas móviles */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        background-color: #24478F;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.open {
+        display: flex; /* Mostrar el menú cuando está abierto */
+    }
+
+    nav a {
+        padding: 15px;
+        border-top: 1px solid #EEE;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+footer {
+    background-color: #111;
+    color: #FFF;
+    text-align: center;
+    padding: 15px;
+}
+
+#last-update {
+    color: #FFEEAD;
+    font-style: italic;
+}
+
+/* Style for the Honduras flag in the footer */
+.honduras-flag {
+    margin-top: 10px;
+    width: 60px;  /* Adjust the size of the flag */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 5px;
+}

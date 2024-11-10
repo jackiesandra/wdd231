@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Sandra Rodríguez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="profile-container">
+            <img src="images/me.jpg" alt="Foto de Sandra Rodríguez" class="profile-img">
+            <h1>Sandra Rodriguez</h1>
+        </div>
+
+        <div id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+        <nav id="navbar">
+            <a href="#">Home</a>
+            <a href="#">Chamber</a>
+            <a href="https://github.com/jackiesandra" target="_blank">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/sandra-rodriguez-8a82a7280/" target="_blank">LinkedIn</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="coursework">
+            <h2>Course Work</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <span>CSE 110 - Introduction to Programming -</span>
+                    <span class="credits">2 credits</span>
+                </div>
+                <div class="course-item">
+                    <span>WDD 130 - Web Fundamentals -</span>
+                    <span class="credits">2 credits</span>
+                </div>
+                <div class="course-item">
+                    <span>CSE 111 - Programming with Functions -</span>
+                    <span class="credits">2 credits</span>
+                </div>
+                <div class="course-item">
+                    <span>CSE 210 - Programming with Classes -</span>
+                    <span class="credits">2 credits</span>
+                </div>
+                <div class="course-item">
+                    <span>WDD 131 - Dynamic Web Fundamentals -</span>
+                    <span class="credits">2 credits</span>
+                </div>
+                <div class="course-item">
+                    <span>WDD 231 - Frontend Web Development I -</span>
+                    <span class="credits">2 credits</span>
+                </div>
+                <div class="total-credits">
+                    <strong>Total Credits:</strong>
+                    <span class="credits-total">12 credits</span>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <h2>Cortes, Honduras</h2>
+            <img src="images/lagodeyojoa2.jpg" alt="Lago de Yojoa" class="location-img">
+            <p>Lago de Yojoa</p>
+        </div>
+    </div>
+    <div class="certificates">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="buttons">
+            <button class="filter-btn" type="button" onclick="filterCourses('all')">All</button>
+            <button class="filter-btn" type="button" onclick="filterCourses('cse')">CSE</button>
+            <button class="filter-btn" type="button" onclick="filterCourses('wdd')">WDD</button>
+        </div>
+        <div class="course-list">
+            <button class="course-btn cse" type="button">CSE 110</button>
+            <button class="course-btn wdd" type="button">WDD 130</button>
+            <button class="course-btn cse" type="button">CSE 111</button>
+            <button class="course-btn cse" type="button">CSE 210</button>
+            <button class="course-btn wdd" type="button">WDD 131</button>
+            <button class="course-btn wdd" type="button">WDD 231</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>©2025 🌸 Sandra Rodríguez 🌸 Honduras<img src="images/honduras-flag.png" alt="Honduras Flag" class="honduras-flag"></p>
+        <p id="last-update">Last Update: 01/01/1970 12:00:00</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
