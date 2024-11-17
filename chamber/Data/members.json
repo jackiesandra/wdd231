@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Café Honduras",
+        "address": "123 Coffee Lane, San Pedro Sula",
+        "phone": "+504 2550-1111",
+        "website": "http://cafehonduras.hn",
+        "image": "images/cafe_honduras.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Industrias Cortés",
+        "address": "456 Industrial Blvd, San Pedro Sula",
+        "phone": "+504 2550-2222",
+        "website": "http://industriascortes.hn",
+        "image": "images/industrias_cortes.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Restaurante La Ceiba",
+        "address": "789 Food St, San Pedro Sula",
+        "phone": "+504 2550-3333",
+        "website": "http://laceiba.hn",
+        "image": "images/la_ceiba.jpg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Hotel Palma Real",
+        "address": "101 Beachfront Ave, San Pedro Sula",
+        "phone": "+504 2550-4444",
+        "website": "http://palmarreal.hn",
+        "image": "images/palma_real.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Tienda La Esquina",
+        "address": "202 Market Rd, San Pedro Sula",
+        "phone": "+504 2550-5555",
+        "website": "http://laesquina.hn",
+        "image": "images/la_esquina.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Clínica Salud Total",
+        "address": "303 Healthway, San Pedro Sula",
+        "phone": "+504 2550-6666",
+        "website": "http://saludtotal.hn",
+        "image": "images/salud_total.jpg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Academia de Música SPS",
+        "address": "404 Harmony Lane, San Pedro Sula",
+        "phone": "+504 2550-7777",
+        "website": "http://musicasps.hn",
+        "image": "images/musica_sps.jpg",
+        "membershipLevel": 3
+    }
+]

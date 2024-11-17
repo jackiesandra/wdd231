@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Pedro Sula Chamber Directory</title>
+
+    <!-- Meta Data for Social Media -->
+    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="http://example.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <h1>San Pedro Sula Chamber of Commerce</h1>
+        </div>
+        <button class="hamburger" type="button" aria-label="Open navigation">&#9776;</button>
+<button class="close-menu hidden" type="button" aria-label="Close navigation">&times;</button>
+ <nav class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Hero Image">
+        <button class="keynote-btn" type="button">Keynote Tickets</button>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Home</h2>
+
+        <!-- Events and Weather Section -->
+        <div class="events-weather">
+            <section class="events">
+                <h3>Upcoming Events</h3>
+                <div class="events-content">
+                    <p>Stay tuned for upcoming events!</p>
+                </div>
+            </section>
+
+            <section class="current-weather">
+                <h4>Current Weather</h4>
+                <img src="images/sunny.png" alt="Sunny">
+                <p>20°C</p>
+                <p>Sunny</p>
+                <p>High: 22°C | Low: 7°C</p>
+                <p>Humidity: 30%</p>
+                <p>Sunrise: 6:30am | Sunset: 6:00pm</p>
+            </section>
+
+            <section class="weather-forecast">
+                <h4>Weather Forecast</h4>
+                <p>Today: 20°C</p>
+                <p>Sunday: 23°C</p>
+                <p>Monday: 24°C</p>
+            </section>
+        </div>
+
+        <!-- Business Spotlight Section -->
+        <section>
+            <div class="view-toggle">
+                <button id="gridView" type="button">Grid</button>
+                <button id="listView" type="button">List</button>
+            </div>
+            <div id="business-directory" class="business-card-container grid-view">
+                <!-- Dynamic content populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>Chamber of Commerce</p>
+            <p>123 Main Street, San Pedro Sula, Honduras</p>
+            <p>Email: info@chamber.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD231 Class Project</p>
+            <p>Sandra Rodriguez</p>
+            <p>&copy; 2024 San Pedro Sula Chamber of Commerce. All rights reserved.</p>
+            <p>Last Modification: <span id="lastModified">Loading...</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
