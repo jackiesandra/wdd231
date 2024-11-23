@@ -1,4 +1,4 @@
-/* Reset margins and fonts */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,22 +6,26 @@
     font-family: Arial, sans-serif;
 }
 
-/*body styling */
+/* Body Styling */
 body {
-    background-color: #E8EEF1;
+    background-color: #F2F5F9; /* Retains your original background color */
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Header styling */
+/* Header Section */
 .header {
-    background-color: #24478F;
+    background-color: #24478F; /* Original header background */
     color: #FFF;
     padding: 20px;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Profile container  */
 .profile-container {
     display: flex;
     align-items: center;
@@ -30,45 +34,22 @@ body {
 }
 
 .profile-img {
-    border-radius: 0%;
-    width: 170px;
-    height: auto;
-    background-color: #24478F;
-    padding: 5px;
+    border-radius: 0%; /* Keeps your circular profile image */
+    width: 150px;
+    height:auto;
+    object-fit: cover;
+    border: 2px solid #FFEEAD;
 }
 
-/* Title */
 h1 {
-    margin: 0;
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #FFF;
 }
 
-/* Navigation links */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav a {
-    color: #FFEEAD;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #111;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Estilo hover para los enlaces */
-nav a:hover {
-    background-color: #FFEEAD;
-    color: #111;
-}
-
-/* Menú hamburguesa */
+/* Hamburger Menu Button */
 .menu-toggle {
-    display: none; /* No mostrar por defecto en pantallas grandes */
+    display: none; /* Hidden by default on larger screens */
     font-size: 30px;
     color: #FFF;
     background: none;
@@ -77,146 +58,183 @@ nav a:hover {
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 10;
 }
 
-/* Main container for Course Work and Location */
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #000; /* Original black navigation background */
+    padding: 10px 0;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: #FFEEAD; /* Original link color */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #000;
+    background-color: #FFEEAD;
+    border-radius: 5px;
+}
+
+/* Main Content Section */
 .content {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-/* Styling for the container that holds Course Work and the Location image */
-.course-container {
-    display: flex;
-    gap: 20px;
-    width: 100%;
     justify-content: space-between;
-    padding: 0 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 20px;
 }
 
+/* Coursework Section */
 .coursework {
-    background-color: #24478F;
+    background-color: #24478F; /* Keeps original background */
     color: #FFF;
     text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     width: 45%;
-    margin-top: 10px;
 }
 
 .coursework h2 {
-    background-color: #24478F;
-    color: #FFF;
+    background-color: #1E3A73; /* Original header color for coursework */
     padding: 10px;
-    border-radius: 8px 8px 0 0;
-    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0 0;
 }
 
 .course-list {
-    background-color: #FFF;
+    list-style: none;
+    background-color: #FFF; /* Keeps original white list background */
     color: #333;
-    padding: 10px;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    list-style-type: none;
-    margin: 0;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
 }
 
 .course-item {
     display: flex;
     justify-content: space-between;
-    padding: 8px;
-    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 10px;
+    font-size: 0.9em;
 }
 
-.course-item:last-child {
-    border-bottom: none;
-}
-
-.credits {
-    color: #888;
-    font-style: italic;
+.course-item span {
+    color: #555;
 }
 
 .total-credits {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
     font-weight: bold;
-    background-color: #F9F9F9;
-    border-top: 2px solid #24478F;
-    border-radius: 0 0 8px 8px;
+    padding-top: 10px;
     color: #333;
 }
 
-.credits-total {
-    color: #333;
-}
-
-/* Location section styling */
+/* Location Section */
 .location {
-    background-color: #FFF;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 40%;
+    background-color: #FFF; /* Original white background */
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 45%;
 }
 
 .location h2 {
-    margin-bottom: 10px;
-    background-color: #24478F;
+    background-color: #1E3A73; /* Original blue color */
     color: #FFF;
     padding: 10px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
 }
 
 .location-img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 0 0 8px 8px;
+    max-width: 100%;
+    border-radius: 10px;
     margin-top: 10px;
 }
 
 .location p {
+    margin-top: 10px;
     font-style: italic;
     color: #555;
-    margin-top: 5px;
 }
 
-/* Certificate styling */
+/* Certificates Section */
 .certificates {
-    background-color: #24478F;
+    background-color: #1E3A73; /* Keeps original certificates background color */
     color: #FFF;
     text-align: center;
     padding: 20px;
     margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    margin-left: 30%;
 }
 
-.buttons {
-    margin: 10px 0;
+.certificates h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
 }
 
-.filter-btn {
-    background-color: #111;
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-buttons button {
+    background-color: #000; /* Keeps original black button color */
     color: #FFF;
+    border: none;
     padding: 10px 15px;
-    margin: 5px;
-    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 0.9em;
 }
 
-.course-list .course-btn {
-    background-color: #AA4934;
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background-color: #FFEEAD;
+    color: #000;
+}
+
+.course-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.course-btn {
+    background-color: #AA4934; /* Keeps original button color */
     color: #FFF;
-    padding: 10px 20px;
-    margin: 5px;
     border: none;
-    cursor: pointer;
+    padding: 10px 15px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: 80px;
+    text-align: center;
+}
+
+.course-btn:hover {
+    background-color: #FF6655;
 }
 
 .cse {
@@ -224,12 +242,26 @@ nav a:hover {
     color: #333;
 }
 
-/* Footer */
+.wdd {
+    background-color: #938c8a;
+    color: #FFF;
+}
+
+/* Footer Section */
 footer {
-    background-color: #24478F;
+    background-color: #24478F; /* Keeps original footer background color */
     color: #FFF;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 #last-update {
@@ -237,50 +269,107 @@ footer {
     font-style: italic;
 }
 
-/* Menú en pantallas móviles */
+/* Mobile View */
 @media (max-width: 768px) {
-    nav {
-        display: none; /* Ocultar el menú por defecto */
+    .content {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .coursework,
+    .location {
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #24478F; /* Matches header background */
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 20px 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+        padding: 10px 20px;
+        width: 90%;
+        text-align: center;
+        background-color: #1E3A73;
+        border-radius: 5px;
+    }
+
+    .nav-menu a:hover {
+        background-color: #FFEEAD;
+        color: #000;
+    }
+}
+
+/* Mobile View: Show Hamburger and Hide Menu */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show hamburger button on small screens */
+    }
+
+    .nav-menu {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        align-items: center;
         background-color: #24478F;
         position: absolute;
         top: 70px;
         right: 0;
         width: 100%;
+        z-index: 10;
         text-align: center;
+        padding: 20px 0;
+        border-radius: 0 0 10px 10px;
     }
 
-    nav.open {
-        display: flex; /* Mostrar el menú cuando está abierto */
+    .nav-menu.active {
+        display: flex; /* Show the menu when active */
     }
 
-    nav a {
-        padding: 15px;
-        border-top: 1px solid #EEE;
-        width: 100%;
+    .nav-menu a {
+        margin: 10px 0;
+        padding: 10px 20px;
+        width: 90%;
         text-align: center;
+        background-color: #1E3A73;
+        border-radius: 5px;
     }
 
+    .nav-menu a:hover {
+        background-color: #FFEEAD;
+        color: #000;
+    }
+}
+
+/* Large Screen: Hide Hamburger */
+@media (min-width: 769px) {
     .menu-toggle {
-        display: block;
+        display: none; /* Hide hamburger button */
     }
-}
-footer {
-    background-color: #111;
-    color: #FFF;
-    text-align: center;
-    padding: 15px;
-}
 
-#last-update {
-    color: #FFEEAD;
-    font-style: italic;
-}
+    .nav-menu {
+        display: flex; /* Show menu in a row */
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
 
-/* Style for the Honduras flag in the footer */
-.honduras-flag {
-    margin-top: 10px;
-    width: 60px;  /* Adjust the size of the flag */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 5px;
+    .nav-menu a {
+        margin: 0 15px;
+        padding: 10px 0;
+    }
 }

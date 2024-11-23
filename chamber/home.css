@@ -1,0 +1,547 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 50px;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+/* Hamburger Button */
+.hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+    display: block; /* Visible on mobile */
+}
+
+.close-menu {
+    font-size: 24px; /* Size of the "X" */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: white; /* White color for contrast */
+    position: absolute; /* Position it relative to the parent container */
+    top: 20px; /* Distance from the top of the menu */
+    right: 20px; /* Distance from the right edge */
+    z-index: 1100; /* Ensure it’s above other elements */
+    display: none; /* Initially hidden */
+}
+
+
+/* Navigation Menu */
+.nav-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    background-color: #333; /* Dark background */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.nav-menu.active {
+    display: flex; /* Show menu when active */
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.nav-menu a:hover {
+    background-color: #555; /* Highlight on hover */
+}
+
+@media (min-width: 768px) {
+    .hamburger, .close-menu {
+        display: none; /* Hide both buttons on desktop */
+    }
+
+    .nav-menu {
+        display: flex; /* Always show the menu on desktop */
+        position: static;
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+    }
+
+    .nav-menu a {
+        border-bottom: none;
+        padding: 0 15px; /* Spacing between links in horizontal layout */
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.hero .hero-content {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.hero .keynote-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.hero .keynote-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de todas las secciones */
+.events-weather {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para Clima, Eventos y Pronóstico */
+    gap: 1.5rem; /* Espaciado entre columnas */
+    padding: 2rem;
+    background-color: #f4f4f4; /* Fondo del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para las tarjetas individuales */
+.events-weather > section {
+    background-color: #b3c7f5; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 1rem;
+    text-align: center; /* Centrar contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente el contenido */
+}
+
+/* Títulos de cada tarjeta */
+.events-weather > section h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Contenido del texto */
+.events-weather > section p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* Estilo de los íconos (si se usan) */
+.events-weather > section img,
+.events-weather > section .weather-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1rem auto; /* Centrar el ícono */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .events-weather {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        gap: 1rem;
+    }
+}
+
+/* Spotlight Section */
+.spotlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.spotlight-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 150%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.spotlight-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+/* Centrar el título de Miembros Destacados */
+#spotlight-title {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #333; /* Color del texto */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center; /* Para pantallas pequeñas */
+}
+
+/* Información del negocio (lado izquierdo) */
+.footer-info {
+    flex: 1;
+    text-align: left; /* Alineación a la izquierda */
+    font-size: 0.9rem;
+}
+
+/* Iconos sociales (centro) */
+.social-icons {
+    flex: 1;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 8px;
+    background-color: #222; /* Fondo oscuro */
+    padding: 5px; /* Espaciado interno */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    background-color: #555; /* Fondo más claro al pasar el mouse */
+}
+
+/* Derechos de autor (lado derecho) */
+.footer-rights {
+    flex: 1;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center; /* Todo al centro en pantallas pequeñas */
+    }
+
+    .footer-info, .footer-rights {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .events-weather {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
+/* User Personas Section */
+#user-personas {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user-personas h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.persona {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.persona h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.persona p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.persona img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Scenarios Section */
+#scenarios {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#scenarios h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.scenario {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.scenario h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.scenario p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.scenario img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* General Layout for Personas and Scenarios */
+#user-personas, #scenarios {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user-personas h2, #scenarios h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.persona, .scenario {
+    display:flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+}
+
+.persona img, .scenario img {
+    width: 180px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.persona h3, .scenario h3 {
+    font-size: 1.4rem;
+    color: #007BFF;
+    margin: 0;
+}
+
+.persona p, .scenario p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .persona, .scenario {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .persona img, .scenario img {
+        width: 100px; /* Slightly smaller for mobile */
+        margin-bottom: 10px; /* Add spacing for stacked layout */
+    }
+}
+/* Contenedor principal */
+#spotlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Espaciado entre tarjetas */
+    justify-content: center;
+    margin-top: 2rem;
+}
+/* Contenedor principal */
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño responsivo con columnas dinámicas */
+    gap: 1.5rem; /* Espaciado entre las tarjetas */
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+/* Tarjetas de miembros destacados */
+.spotlight-card {
+    background-color: #b3c7f5; /* Color de fondo de la tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Estilo para las imágenes */
+.spotlight-card img {
+    width: 70%; /* Limita el ancho al 100% del contenedor */
+    height: 50%; /* Mantén la proporción original de la imagen */
+    object-fit: contain; /* Ajusta la imagen dentro del espacio disponible sin recortar */
+    margin-bottom: 1rem;
+    border-radius: 20%; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde alrededor de la imagen */
+    padding: 0.5rem;
+}
+
+/* Títulos */
+.spotlight-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Categorías o descripciones */
+.spotlight-card p.category {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Detalles (email, teléfono, URL) */
+.spotlight-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0.25rem 0;
+}
+
+/* Estilo de los enlaces */
+.spotlight-card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    #spotlight-container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}

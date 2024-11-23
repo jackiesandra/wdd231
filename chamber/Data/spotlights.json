@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Café Honduras",
+        "tagline": "Authentic Honduran Coffee",
+        "email": "contact@cafehonduras.hn",
+        "phone": "+504 2550-1111",
+        "url": "http://cafehonduras.hn",
+        "image": "images/cafe_honduras.jpg",
+        "membershipLevel": "gold"
+    },
+    {
+        "name": "Industrias Cortés",
+        "tagline": "Manufacturing Excellence in San Pedro Sula",
+        "email": "info@industriascortes.hn",
+        "phone": "+504 2550-2222",
+        "url": "http://industriascortes.hn",
+        "image": "images/industrias_cortes.jpg",
+        "membershipLevel": "silver"
+    },
+    {
+        "name": "Restaurante La Ceiba",
+        "tagline": "Traditional Honduran Cuisine",
+        "email": "reservas@laceiba.hn",
+        "phone": "+504 2550-3333",
+        "url": "http://laceiba.hn",
+        "image": "images/la_ceiba.jpg",
+        "membershipLevel": "gold"
+    },
+    {
+        "name": "Hotel Maya",
+        "tagline": "Your Home Away from Home",
+        "email": "info@hotelmaya.hn",
+        "phone": "+504 2550-4444",
+        "url": "http://hotelmaya.hn",
+        "image": "images/hotel_maya.jpg",
+        "membershipLevel": "silver"
+    },
+    {
+        "name": "AgroExito",
+        "tagline": "Supporting Local Agriculture",
+        "email": "support@agroexito.hn",
+        "phone": "+504 2550-5555",
+        "url": "http://agroexito.hn",
+        "image": "images/agroexito.jpg",
+        "membershipLevel": "bronze"
+    },
+    {
+        "name": "San Pedro Fitness",
+        "tagline": "Stay Fit, Stay Strong",
+        "email": "contact@spsfitness.hn",
+        "phone": "+504 2550-6666",
+        "url": "http://sanpedrofitness.hn",
+        "image": "images/sps_fitness.jpg",
+        "membershipLevel": "gold"
+    },
+    {
+        "name": "Mueblería Moderna",
+        "tagline": "Elegant Furniture for Every Home",
+        "email": "sales@muebleriamoderna.hn",
+        "phone": "+504 2550-7777",
+        "url": "http://muebleriamoderna.hn",
+        "image": "images/muebles.jpg",
+        "membershipLevel": "silver"
+    }
+]

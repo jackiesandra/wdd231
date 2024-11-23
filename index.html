@@ -7,84 +7,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="profile-container">
-            <img src="images/me.jpg" alt="Foto de Sandra Rodríguez" class="profile-img">
-            <h1>Sandra Rodriguez</h1>
+    <!-- Header Section -->
+    <header>
+        <div class="header">
+            <div class="profile-container">
+                <img src="images/me.jpg" alt="Foto de Sandra Rodríguez" class="profile-img">
+                <h1>Sandra Rodríguez</h1>
+            </div>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation Menu" type="button">&#9776;</button>
+            <nav id="navbar" class="nav-menu">
+                <a href="#">Home</a>
+                <a href="#">Chamber</a>
+                <a href="https://github.com/jackiesandra" target="_blank">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/sandra-rodriguez-8a82a7280/" target="_blank">LinkedIn</a>
+            </nav>
         </div>
+    </header>
 
-        <div id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-
-        <nav id="navbar">
-            <a href="#">Home</a>
-            <a href="#">Chamber</a>
-            <a href="https://github.com/jackiesandra" target="_blank">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/sandra-rodriguez-8a82a7280/" target="_blank">LinkedIn</a>
-        </nav>
-    </div>
-
-    <div class="content">
-        <div class="coursework">
+    <!-- Main Content Section -->
+    <main class="content">
+        <section class="coursework">
             <h2>Course Work</h2>
             <div class="course-list">
-                <div class="course-item">
-                    <span>CSE 110 - Introduction to Programming -</span>
-                    <span class="credits">2 credits</span>
-                </div>
-                <div class="course-item">
-                    <span>WDD 130 - Web Fundamentals -</span>
-                    <span class="credits">2 credits</span>
-                </div>
-                <div class="course-item">
-                    <span>CSE 111 - Programming with Functions -</span>
-                    <span class="credits">2 credits</span>
-                </div>
-                <div class="course-item">
-                    <span>CSE 210 - Programming with Classes -</span>
-                    <span class="credits">2 credits</span>
-                </div>
-                <div class="course-item">
-                    <span>WDD 131 - Dynamic Web Fundamentals -</span>
-                    <span class="credits">2 credits</span>
-                </div>
-                <div class="course-item">
-                    <span>WDD 231 - Frontend Web Development I -</span>
-                    <span class="credits">2 credits</span>
-                </div>
+                <!-- Courses -->
+                <div class="course-item"><span>CSE 110 - Introduction to Programming</span><span class="credits">2 credits</span></div>
+                <div class="course-item"><span>WDD 130 - Web Fundamentals</span><span class="credits">2 credits</span></div>
+                <div class="course-item"><span>CSE 111 - Programming with Functions</span><span class="credits">2 credits</span></div>
+                <div class="course-item"><span>CSE 210 - Programming with Classes</span><span class="credits">2 credits</span></div>
+                <div class="course-item"><span>WDD 131 - Dynamic Web Fundamentals</span><span class="credits">2 credits</span></div>
+                <div class="course-item"><span>WDD 231 - Frontend Web Development I</span><span class="credits">2 credits</span></div>
+                <!-- Total Credits -->
                 <div class="total-credits">
                     <strong>Total Credits:</strong>
-                    <span class="credits-total">12 credits</span>
+                    <span id="total-credits">12 credits</span>
                 </div>
             </div>
-        </div>
-        <div class="location">
+        </section>
+
+        <section class="location">
             <h2>Cortes, Honduras</h2>
             <img src="images/lagodeyojoa2.jpg" alt="Lago de Yojoa" class="location-img">
             <p>Lago de Yojoa</p>
-        </div>
-    </div>
-    <div class="certificates">
-        <h2>Web and Computer Programming Certificate</h2>
-        <div class="buttons">
-            <button class="filter-btn" type="button" onclick="filterCourses('all')">All</button>
-            <button class="filter-btn" type="button" onclick="filterCourses('cse')">CSE</button>
-            <button class="filter-btn" type="button" onclick="filterCourses('wdd')">WDD</button>
-        </div>
-        <div class="course-list">
-            <button class="course-btn cse" type="button">CSE 110</button>
-            <button class="course-btn wdd" type="button">WDD 130</button>
-            <button class="course-btn cse" type="button">CSE 111</button>
-            <button class="course-btn cse" type="button">CSE 210</button>
-            <button class="course-btn wdd" type="button">WDD 131</button>
-            <button class="course-btn wdd" type="button">WDD 231</button>
-        </div>
-    </div>
+        </section>
 
+        <section class="certificates">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button type="button" onclick="filterCourses('all')">All</button>
+                <button type="button" onclick="filterCourses('cse')">CSE</button>
+                <button type="button" onclick="filterCourses('wdd')">WDD</button>
+            </div>
+            <div id="filtered-courses" class="course-buttons">
+                <button type="button" class="course-btn cse">CSE 110</button>
+                <button type="button" class="course-btn wdd">WDD 130</button>
+                <button type="button" class="course-btn cse">CSE 111</button>
+                <button type="button" class="course-btn cse">CSE 210</button>
+                <button type="button" class="course-btn wdd">WDD 131</button>
+                <button type="button" class="course-btn wdd">WDD 231</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
     <footer>
-        <p>©2025 🌸 Sandra Rodríguez 🌸 Honduras<img src="images/honduras-flag.png" alt="Honduras Flag" class="honduras-flag"></p>
-        <p id="last-update">Last Update: 01/01/1970 12:00:00</p>
+        <p>&copy; 2025 🌸 Sandra Rodríguez 🌸 Honduras <img src="images/honduras-flag.png" alt="Honduras Flag"></p>
+        <p id="last-update">Last Update: </p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Dynamic Footer Date
+        document.addEventListener('DOMContentLoaded', () => {
+            const lastUpdateElement = document.getElementById('last-update');
+            const currentDate = new Date();
+            lastUpdateElement.textContent = `Last Update: ${currentDate.toLocaleString()}`;
+        });
+
+        // Filter Courses
+        function filterCourses(filter) {
+            const allCourses = document.querySelectorAll('.course-btn');
+            allCourses.forEach(course => {
+                if (filter === 'all' || course.classList.contains(filter)) {
+                    course.style.display = 'inline-block';
+                } else {
+                    course.style.display = 'none';
+                }
+            });
+        }
+
+        // Toggle Menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
