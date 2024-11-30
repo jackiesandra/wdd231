@@ -1,0 +1,222 @@
+/* === General Reset === */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Body === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* === Header === */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+header .nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+header .nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+header .nav-menu a:hover {
+    color: #00aced;
+}
+
+header .hamburger,
+header .close-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* === Mobile Menu === */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-menu a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+.close-menu {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+}
+
+/* === Hero Section === */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* === Main Content === */
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0056a6;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main li {
+    font-size: 1.1rem;
+    background: #f1f1f1;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+main li span {
+    font-weight: bold;
+    color: #0056a6;
+}
+
+/* === Footer === */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-info, .footer-meta, .social-icons {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-info p, .footer-meta p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    header .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    header .close-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    main li {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    header .hamburger,
+    header .close-menu {
+        display: none; /* Hide buttons on desktop */
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .nav-menu a {
+        border-bottom: none;
+    }
+}

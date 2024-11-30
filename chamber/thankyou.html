@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="thankyou.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <h1>San Pedro Sula Chamber of Commerce</h1>
+        </div>
+        <button class="hamburger" type="button" aria-label="Open navigation">&#9776;</button>
+        <button class="close-menu hidden" type="button" aria-label="Close navigation">&times;</button>
+        <nav class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+</head>
+<body>
+    <header>
+        <!-- Include site header -->
+    </header>
+
+    <main>
+        <h1>Thank You for Joining!</h1>
+        <p>We appreciate your interest in joining the Chamber. Below are the details you submitted:</p>
+        <ul>
+            <li>First Name: <span id="first-name"></span></li>
+            <li>Last Name: <span id="last-name"></span></li>
+            <li>Email: <span id="email"></span></li>
+            <li>Phone: <span id="phone"></span></li>
+            <li>Business Name: <span id="business"></span></li>
+            <li>Submission Date: <span id="timestamp"></span></li>
+        </ul>
+    </main>
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-info">
+        <p>Chamber of Commerce</p>
+        <p>123 Main Street, San Pedro Sula, Honduras</p>
+        <p>Email: info@chamber.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+    </div>
+    <div class="social-icons">
+        <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedIn.jpg" alt="LinkedIn"></a>
+    </div>
+    <div class="footer-meta">
+        <p>WDD231 Class Project</p>
+        <p>Sandra Rodriguez</p>
+        <p>&copy; 2024 San Pedro Sula Chamber of Commerce. All rights reserved.</p>
+        <p>Last Modification: <span id="lastModified">Loading...</span></p>
+    </div>
+</footer>
+    <script>
+        // Populate fields from query string
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('first-name').textContent = params.get('first-name');
+        document.getElementById('last-name').textContent = params.get('last-name');
+        document.getElementById('email').textContent = params.get('email');
+        document.getElementById('phone').textContent = params.get('phone');
+        document.getElementById('business').textContent = params.get('business');
+        document.getElementById('timestamp').textContent = params.get('timestamp');
+    </script>
+     <script src="join.js"></script>
+</body>
+</html>

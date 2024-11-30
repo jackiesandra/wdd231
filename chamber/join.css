@@ -1,0 +1,290 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+header .nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.hamburger,
+.close-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+}
+
+.hamburger {
+    display: block; /* Visible in mobile view */
+}
+
+.close-menu {
+    display: none; /* Initially hidden */
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+@media (min-width: 768px) {
+    .hamburger,
+    .close-menu {
+        display: none; /* Hide hamburger and close button on desktop */
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+    }
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    height: 270px;
+}
+
+/* Center the <h1> */
+main h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Form Styles */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+form button {
+    background-color: #0056a6; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px 15px; /* Padding for the button */
+    font-size: 1.1rem; /* Increase font size */
+    border-radius: 5px; /* Add rounded corners (optional) */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+form button:hover {
+    background-color: #003f7a; /* Darker blue on hover */
+}
+
+
+/* Membership Section */
+#membership-section {
+    display: flex;
+    flex-direction: column; /* Default: Columnar layout */
+    gap: 20px; /* Spacing between form and cards */
+    margin: 20px auto;
+    max-width: 1200px;
+    align-items: center; /* Center items on smaller screens */
+}
+
+.form-container {
+    max-width: 600px;
+    width: 100%; /* Full width on smaller screens */
+}
+
+/* Membership Cards */
+#membership-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards on top of each other */
+    gap: 20px;
+    width: 100%; /* Full width */
+}
+
+/* Individual Card */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Full width on smaller screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+    color: #0056a6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    #membership-section {
+        flex-direction: row; /* Row layout for form and cards */
+        justify-content: space-between;
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    #membership-cards {
+        flex: 1;
+        flex-wrap: wrap; /* Allow cards to wrap */
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1 1 calc(48% - 20px); /* Two cards per row */
+        max-width: calc(68% - 40px);
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 1 calc(25% - 20px); /* Tarjetas más anchas (45% del contenedor) */
+        max-width: calc(32% - 20px);
+        padding: 30px; /* Increase padding for larger screens */
+    }
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: hsl(218, 81%, 65%);
+    cursor: pointer;
+}
+
+.modal .close:hover {
+    color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-meta {
+    flex: 1;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.footer-meta span {
+    font-weight: bold;
+}
+
+.social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+}

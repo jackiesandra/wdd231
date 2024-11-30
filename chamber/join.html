@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="join.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <h1>San Pedro Sula Chamber of Commerce</h1>
+        </div>
+        <button class="hamburger" type="button" aria-label="Open navigation">&#9776;</button>
+        <button class="close-menu hidden" type="button" aria-label="Close navigation">&times;</button>
+        <nav class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="images/joinus.webp" alt="Hero Image">
+    </div>
+    <main>
+        <h1>Join the Chamber</h1>
+        <div id="membership-section">
+            <!-- Form Section -->
+            <div class="form-container">
+                <form method="get" action="thankyou.html">
+                    <!-- Applicant's First Name -->
+                    <label>First Name:
+                        <input type="text" id="first-name" name="first-name" required 
+                            title="Enter your first name" autocomplete="given-name">
+                    </label>
+                <!-- Applicant's Last Name -->
+                    <label>Last Name:
+                        <input type="text" id="last-name" name="last-name" required 
+                            title="Enter your last name" autocomplete="family-name">
+                    </label>
+                   <!-- Organizational Title -->
+                    <label>Organizational Title:
+                        <input type="text" id="org-title" name="org-title" required
+                            title="Enter your title" autocomplete="organization-title"
+                            pattern="[a-zA-Z\s\-]{7,}">
+                    </label>
+                  <!-- Email -->
+                    <label>Email:
+                        <input type="email" id="email" name="email" required 
+                            title="Enter your email" autocomplete="email"
+                            placeholder="example@example.com">
+                    </label>
+              <!-- Phone Number -->
+                    <label>Mobile Phone:
+                        <input type="tel" id="phone" name="phone" required 
+                            title="Enter your mobile number" autocomplete="tel">
+                    </label>
+                    <!-- Business Name -->
+                    <label>Business/Organization Name:
+                        <input type="text" id="business" name="business" required 
+                            title="Enter your business name" autocomplete="organization">
+                    </label>
+
+                    <!-- Membership Level -->
+                    <label>Membership Level:
+                        <select id="membership-level" name="membership-level">
+                            <option value="np">Non-Profit Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+               <!-- Organization Description -->
+                    <label>Business/Organization Description:
+                        <textarea id="org-description" name="org-description" title="Describe your organization"></textarea>
+                    </label>
+                  <!-- Timestamp -->
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                 <!-- Submit Button -->
+                    <button type="submit">Join Now</button>
+                </form>
+            </div>
+            <!-- Membership Cards -->
+            <div id="membership-cards">
+                <div class="card np">
+                    <h2>Non-Profit Membership</h2>
+                    <a href="#modal-np" class="modal-link" onclick="openModal('modal-np')">More Info</a>
+                </div>
+                <div class="card bronze">
+                    <h2>Bronze Membership</h2>
+                    <a href="#modal-bronze" class="modal-link" onclick="openModal('modal-bronze')">More Info</a>
+                </div>
+                <div class="card silver">
+                    <h2>Silver Membership</h2>
+                    <a href="#modal-silver" class="modal-link" onclick="openModal('modal-silver')">More Info</a>
+                </div>
+                <div class="card gold">
+                    <h2>Gold Membership</h2>
+                    <a href="#modal-gold" class="modal-link" onclick="openModal('modal-gold')">More Info</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="modal-np" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-np')">&times;</span>
+                <h2>Non-Profit Membership</h2>
+                <p>No cost for non-profit organizations. Includes access to networking events, community support, and special programs for NGOs. This membership is tailored to help non-profits connect and collaborate with other organizations.</p>
+                <p><strong>Technology Access:</strong> Basic online directory listing.</p>
+            </div>
+        </div>
+
+        <div id="modal-bronze" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
+                <h2>Bronze Membership</h2>
+                <p>Designed for small businesses, this membership offers advertising opportunities, networking sessions, and discounted access to training programs.</p>
+                <p><strong>Benefits:</strong> Basic advertisement placement and member-exclusive offers.</p>
+                <p><strong>Technology Access:</strong> Business profile in our online directory.</p>
+            </div>
+        </div>
+
+        <div id="modal-silver" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-silver')">&times;</span>
+                <h2>Silver Membership</h2>
+                <p>This membership includes advanced advertising options, extended training opportunities, and priority invitations to special events. Perfect for businesses looking to scale their presence in the community.</p>
+                <p><strong>Benefits:</strong> Priority advertisement placement, discounts on community events, and training sessions.</p>
+                <p><strong>Technology Access:</strong> Premium business profile and search optimization in our online directory.</p>
+            </div>
+        </div>
+
+        <div id="modal-gold" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-gold')">&times;</span>
+                <h2>Gold Membership</h2>
+                <p>The ultimate membership level, offering maximum exposure, VIP access to all events, and premium training resources. This membership is ideal for established businesses aiming for high-impact growth.</p>
+                <p><strong>Benefits:</strong> VIP event invitations, spotlight advertising, and free access to premium workshops.</p>
+                <p><strong>Technology Access:</strong> Featured business listing with homepage promotion.</p>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>Chamber of Commerce</p>
+            <p>123 Main Street, San Pedro Sula, Honduras</p>
+            <p>Email: info@chamber.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedIn.jpg" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD231 Class Project</p>
+            <p>Sandra Rodriguez</p>
+            <p>&copy; 2024 San Pedro Sula Chamber of Commerce. All rights reserved.</p>
+            <p>Last Modification: <span id="lastModified">Loading...</span></p>
+        </div>
+    </footer>
+
+    <script src="join.js"></script>
+</body>
+</html>
