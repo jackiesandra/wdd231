@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover San Pedro Sula</title>
+
+    <!-- Meta Data for Social Media -->
+    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="http://example.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="discover.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="San Pedro Sula Chamber Logo">
+            <h1>San Pedro Sula Chamber of Commerce</h1>
+        </div>
+        <button class="hamburger" type="button" aria-label="Open navigation">&#9776;</button>
+        <button class="close-menu hidden" type="button" aria-label="Close navigation">&times;</button>
+        <nav class="nav-menu" aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html" aria-current="page">Discover</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <img src="images/discoverpage.jpg" alt="Discover the beauty of San Pedro Sula">
+    </div>
+    <!-- Main Content -->
+    <main class="discover-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Visitor Message -->
+            <div id="visitor-message" class="visitor-message"></div>
+            <!-- Demographics Section -->
+            <div class="sidebar-section demographics">
+                <h3>Demographics</h3>
+                <p>Population: 800,000+</p>
+                <p>Area: 132 km²</p>
+                <p>Language: Spanish</p>
+            </div>
+            <!-- Attractions Section -->
+            <div class="sidebar-section attractions">
+                <h3>Attractions</h3>
+                <ul>
+                    <li><strong>Parque Nacional Cusuco:</strong> Explore the lush greenery and cultural heritage of San Pedro Sula.</li>
+                    <li><strong>Guamilito Market:</strong> Experience the vibrant local artisan market with crafts and pottery.</li>
+                    <li><strong>Museum of Anthropology:</strong> Learn about the history and culture of Honduras.</li>
+                    <li><strong>Local Restaurants:</strong> Enjoy traditional dishes and the warmth of Honduran hospitality.</li>
+                    <li><strong>Central Plaza:</strong> Visit the iconic central plaza with its rich greenery and historic landmarks.</li>
+                    <li><strong>Industrial Zone:</strong> Discover the business heart of the city with modern infrastructure.</li>
+                </ul>
+            </div>
+            <!-- Calendar Section -->
+            <div class="sidebar-section calendar">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li>Business Expo - March 10</li>
+                    <li>Networking Gala - April 5</li>
+                </ul>
+            </div>
+            <div class="calendar-widget">
+                <h3 id="calendar-heading">December 2024</h3>
+                <div id="calendar">
+                    <div class="day-header">Sun</div>
+                    <div class="day-header">Mon</div>
+                    <div class="day-header">Tue</div>
+                    <div class="day-header">Wed</div>
+                    <div class="day-header">Thu</div>
+                    <div class="day-header">Fri</div>
+                    <div class="day-header">Sat</div>
+                    <!-- Days dynamically filled by JavaScript -->
+                </div>
+            </div>
+        </aside>
+        <!-- Image Gallery -->
+        <section class="gallery">
+            <h3>Gallery</h3>
+            <div class="gallery-grid">
+                <figure>
+                    <img data-src="images/pic1.jpeg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+                        alt="Parque Nacional Cusuco" loading="lazy">
+                    <figcaption>Parque Nacional Cusuco</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/pic2.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+                        alt="Guamilito Market" loading="lazy">
+                    <figcaption>Guamilito Market</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/pic3.jpeg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+                        alt="Museum of Anthropology" loading="lazy">
+                    <figcaption>Museum of Anthropology</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/pic4.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+                        alt="Local Restaurants" loading="lazy">
+                    <figcaption>Local Restaurants</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/pic5.jpeg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+                        alt="Central Plaza" loading="lazy">
+                    <figcaption>Central Plaza</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/pic6.jpeg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+                        alt="Industrial Zone" loading="lazy">
+                    <figcaption>Industrial Zone</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>Chamber of Commerce</p>
+            <p>123 Main Street, San Pedro Sula, Honduras</p>
+            <p>Email: info@chamber.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedIn.jpg" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD231 Class Project</p>
+            <p>Sandra Rodriguez</p>
+            <p>&copy; 2024 San Pedro Sula Chamber of Commerce. All rights reserved.</p>
+            <p>Last Modification: <span id="lastModified">Loading...</span></p>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="discover.js"></script>
+</body>
+</html>
