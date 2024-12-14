@@ -1,0 +1,61 @@
+{
+    "destinations": [
+      {
+        "name": "Roatan Island",
+        "location": "Bay Islands, Honduras",
+        "population": 50000,
+        "best_days": ["Monday", "Thursday"],
+        "cultural_festivals": ["Semana Santa", "Patron Saint Festival"]
+      },
+      {
+        "name": "Copan Ruins",
+        "location": "Copan Department, Honduras",
+        "population": 40000,
+        "best_days": ["Wednesday", "Saturday"],
+        "cultural_festivals": ["Guacamaya Festival", "Maya Ruins Heritage Day"]
+      },
+      {
+        "name": "La Ceiba",
+        "location": "Atlantida Department, Honduras",
+        "population": 200000,
+        "best_days": ["Friday", "Saturday"],
+        "cultural_festivals": ["Gran Carnaval de La Ceiba", "San Isidro Festival"]
+      },
+      {
+        "name": "Pico Bonito National Park",
+        "location": "La Ceiba, Atlantida Department",
+        "population": "N/A",
+        "best_days": ["Tuesday", "Thursday"],
+        "cultural_festivals": ["Nature Conservation Day", "Eco Tourism Week"]
+      },
+      {
+        "name": "Utila Island",
+        "location": "Bay Islands, Honduras",
+        "population": 5000,
+        "best_days": ["Sunday", "Wednesday"],
+        "cultural_festivals": ["Whale Shark Festival", "Independence Day Celebrations"]
+      },
+      {
+        "name": "Lake Yojoa",
+        "location": "Santa Barbara and Cortes Departments",
+        "population": "N/A",
+        "best_days": ["Thursday", "Saturday"],
+        "cultural_festivals": ["Lake Appreciation Day", "Gastronomy Fair"]
+      },
+      {
+        "name": "Gracias",
+        "location": "Lempira Department, Honduras",
+        "population": 60000,
+        "best_days": ["Monday", "Friday"],
+        "cultural_festivals": ["Festival de la Concepcion", "Traditional Markets Day"]
+      },
+      {
+        "name": "Cayos Cochinos",
+        "location": "Caribbean Sea, Honduras",
+        "population": 120,
+        "best_days": ["Wednesday", "Sunday"],
+        "cultural_festivals": ["Garifuna Culture Day", "Seafood Festival"]
+      }
+    ]
+  }
+  

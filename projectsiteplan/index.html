@@ -3,75 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Promoting tourism in Honduras">
     <title>Discover Honduras</title>
+<!-- Meta Data for Social Media -->
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo2.png">
+    <meta property="og:url" content="http://example.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
+        <div class="logo">
+            <img src="images/logo2.png" alt="Discover Honduras Logo">
             <h1>Discover Honduras</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#culture">Culture</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
+        <nav>
+            <button type="button" class="hamburger-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <h2>Discover the Wonders of Honduras</h2>
-            <p>Explore the cultural and natural wealth of our country.</p>
-        </section>
-
-        <!-- Site Name -->
-        <section id="site-name">
-            <h2>Site Name</h2>
-            <p>The site is named <strong>Discover Honduras</strong>. This name reflects the purpose of the website: to invite users to explore and learn about the cultural and natural wonders of Honduras.</p>
-            <p><strong>Optional domain availability:</strong> discover-honduras.org</p>
-        </section>
-
-        <!-- Site Purpose -->
-        <section id="site-purpose">
-            <h2>Site Purpose</h2>
+<!-- Hero Section -->
+<section class="hero">
+    <img src="images/homepage-image.jpg" alt="Discover Honduras Hero Image">
+    <div class="hero-content">
+        <h2>Welcome to Discover Honduras</h2>
+        <p>We invite users to explore and learn about the cultural and natural wonders of Honduras.</p>
+    </div>
+</section>
+<div id="welcome-message">
+</div>
+    <section id="site-purpose-container">
+        <div id="site-purpose">
+            <h2>Our Purpose</h2>
             <p>The purpose of this website is to promote Honduras as a top travel destination by providing detailed information, inspiring media, and planning tools for visitors. The site aims to highlight the country’s beauty, support local communities, and encourage sustainable tourism practices.</p>
-        </section>
-
-        <!-- Scenarios -->
-        <section id="scenarios">
+        </div>
+        <div id="scenarios">
             <h2>Scenarios</h2>
             <ul>
                 <li>What are the must-visit tourist destinations in Honduras?</li>
                 <li>Where can I find eco-friendly travel options?</li>
             </ul>
-        </section>
-
-        <!-- Color Schema -->
-        <section id="color-schema">
-            <h2>Color Schema</h2>
-            <p>The color scheme for the website includes:</p>
+        </div>
+    </section>
+    <section class="events-weather-container">
+        <div class="event-box">
+            <h3>Upcoming Events</h3>
             <ul>
-                <li><strong>Deep Blue (#004080):</strong> Used for headers and navigation bars to evoke trust and professionalism.</li>
-                <li><strong>Green (#2e8b57):</strong> Used for backgrounds and accents to represent nature and sustainability.</li>
+                <li><strong>Honduran Culture Festival:</strong> July 15, 2024</li>
+                <li><strong>Eco-Tourism Expo:</strong> August 10, 2024</li>
+                <li><strong>Mayan Heritage Week:</strong> September 5-12, 2024</li>
             </ul>
-        </section>
-
-        <!-- Typography -->
-        <section id="typography">
-            <h2>Typography</h2>
-            <p>The typography for the website includes:</p>
+        </div>
+        <div class="weather-box">
+            <h3>Current Weather</h3>
+            <img src="images/sunny.png" alt="Sunny">
+            <p><strong>75&deg;F</strong> - Partly Cloudy</p>
+        </div>
+        <div class="forecast-box">
+            <h3>Weather Forecast</h3>
             <ul>
-                <li><strong>Roboto:</strong> For body text, ensuring clarity and readability.</li>
-                <li><strong>Merriweather:</strong> For headings, adding a touch of elegance and personality.</li>
+                <li>Today: 90&deg;F</li>
+                <li>Wednesday: 89&deg;F</li>
+                <li>Thursday: 68&deg;F</li>
             </ul>
-        </section>
-    </main>
+        </div>
+    </section>
+    <section id="customer-opinions">
+        <h2>What Our Visitors Say</h2>
+        <!-- Customer 1 -->
+        <div class="customer-opinion">
+            <img src="images/customer1.jpg" alt="Maria Lopez">
+            <div class="opinion-content">
+                <blockquote>
+                    "Honduras is a hidden gem! The beaches are pristine, and the people are incredibly welcoming."
+                </blockquote>
+                <cite>&mdash; Maria Lopez</cite>
+                <div class="stars">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <!-- Customer 2 -->
+        <div class="customer-opinion">
+            <img src="images/costumer2.jpeg" alt="John Smith">
+            <div class="opinion-content">
+                <blockquote>
+                    "Exploring the Mayan ruins in Copán was a breathtaking experience. Highly recommend it!"
+                </blockquote>
+                <cite>&mdash; John Smith</cite>
+                <div class="stars">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <!-- Customer 3 -->
+        <div class="customer-opinion">
+            <img src="images/customer3.jpg" alt="Anna Wong">
+            <div class="opinion-content">
+                <blockquote>
+                    "I loved the eco-tours and learning about the rich biodiversity of Honduras."
+                </blockquote>
+                <cite>&mdash; Anna Wong</cite>
+                <div class="stars">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Discover Honduras. All rights reserved.</p>
+        <div class="footer-info">
+            <p>Discover Honduras</p>
+            <p>325 Trejo Street, Tegucigalpa, Honduras</p>
+            <p>Email: discover-honduras.org</p>
+            <p>Phone: +1 (812) 656-645</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/youtube.jpg" alt="YouTube"></a>
+            <a href="#"><img src="images/twitter.svg.jpg" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedIn.webp" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD231 Project Site Plan</p>
+            <p>Sandra Rodriguez</p>
+            <p>&copy; 2024 Discover Honduras. All rights reserved.</p>
+            <p>Last Modification: <span id="lastModified">Loading...</span></p>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="java.js"></script>
 </body>
 </html>

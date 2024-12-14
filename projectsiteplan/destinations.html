@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations in Honduras</title>
+
+    <!-- Meta Data for Social Media -->
+    <meta property="og:title" content="Destinations">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo2.png">
+    <meta property="og:url" content="http://example.com/destinations.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" alt="Logo">
+            <h1>Discover Honduras</h1>
+        </div>
+        <nav>
+            <button type="button" class="hamburger-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="destinations.html" aria-current="page">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/destinationshero.jpg" alt="Destinations in Honduras Hero Image">
+        <div class="hero-content">
+            <h2>Explore the Wonders of Honduras</h2>
+            <p>Discover breathtaking destinations that showcase the beauty of our country.</p>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="honduran-destinations">
+            <!-- Centered Header Section -->
+            <div class="destinations-header">
+                <h2>Top Destinations in Honduras</h2>
+                <p>From ancient ruins to pristine beaches, Honduras offers something for every traveler. Here are eight must-visit destinations:</p>
+            </div>
+            <!-- Grid of Destinations -->
+            <div class="destinations-grid">
+                <!-- Destination Cards -->
+                <article class="destination-highlight" data-index="0">
+                    <h3>Roatán Island</h3>
+                    <img src="images/roatan.jpg" loading="lazy" alt="Roatán Island">
+                    <p>Click to learn more about this destination!</p>
+                </article>
+                <article class="destination-highlight" data-index="1">
+                    <h3>Copán Ruins</h3>
+                    <img src="images/copan2.jpg" loading="lazy" alt="Copán Ruins">
+                    <p>Click to learn more about this destination!</p>
+                </article>
+                <article class="destination-highlight" data-index="2">
+                    <h3>La Ceiba</h3>
+                    <img src="images/laceiba.jpeg" loading="lazy" alt="La Ceiba">
+                    <p>Click to learn more about this destination!</p>
+                </article>
+                <article class="destination-highlight" data-index="3">
+                    <h3>Pico Bonito National Park</h3>
+                    <img src="images/picobonito.webp" loading="lazy" alt="Pico Bonito National Park">
+                    <p>Click to learn more about this destination!</p>
+                </article>
+                <article class="destination-highlight" data-index="4">
+                    <h3>Utila Island</h3>
+                    <img src="images/utila.jpg" loading="lazy" alt="Utila Island">
+                    <p>Click to learn more about this destination!</p>
+                </article>
+                <article class="destination-highlight" data-index="5">
+                    <h3>Lake Yojoa</h3>
+                    <img src="images/lagodeyojoa.jpg" loading="lazy" alt="Lake Yojoa">
+                    <p>Click to learn more about this destination!</p>
+                </article>
+                <article class="destination-highlight" data-index="6">
+                    <h3>Gracias</h3>
+                    <img src="images/graciasadios.jpg" loading="lazy" alt="Gracias">
+                    <p>Click to learn more about this destination!</p>
+                </article>
+                <article class="destination-highlight" data-index="7">
+                    <h3>Cayos Cochinos</h3>
+                    <img src="images/cayos.jpg" loading="lazy" alt="Cayos Cochinos">
+                    <p>Click to learn more about this destination!</p>
+                </article>
+            </div>
+        </section>
+        <!-- Modal for Destination Details -->
+        <div id="destination-details" class="modal hidden">
+            <div class="modal-content">
+                <button type="button" id="close-modal" aria-label="Close Modal">&times;</button>
+                <h2 id="destination-name">Destination Details</h2>
+                <p><strong>Location:</strong> <span id="destination-location"></span></p>
+                <p><strong>Population:</strong> <span id="destination-population"></span></p>
+                <p><strong>Best Days to Visit:</strong> <span id="destination-best-days"></span></p>
+                <p><strong>Cultural Festivals:</strong> <span id="destination-festivals"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>Discover Honduras</p>
+            <p>325 Trejo Street, Tegucigalpa, Honduras</p>
+            <p>Email: info@discover-honduras.org</p>
+            <p>Phone: +1-812-656-645</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/youtube.jpg" alt="YouTube Icon"></a>
+            <a href="#"><img src="images/twitter.svg.jpg" alt="Twitter Icon"></a>
+            <a href="#"><img src="images/linkedIn.webp" alt="LinkedIn Icon"></a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD231 Project Site Plan</p>
+            <p>Sandra Rodriguez</p>
+            <p>&copy; 2024 Discover Honduras. All rights reserved.</p>
+            <p>Last Modification: <span id="lastModified">Loading...</span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="destinations.js"></script>
+</body>
+</html>

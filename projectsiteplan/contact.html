@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Booking</title>
+
+    <!-- Meta Data for Social Media -->
+    <meta property="og:title" content="Contact and Booking">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo2.png">
+    <meta property="og:url" content="http://example.com/contact.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" loading="lazy" alt="Discover Honduras Logo">
+            <h1>Discover Honduras</h1>
+        </div>
+        <nav>
+            <button type="button" class="hamburger-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/contact-hero.jpg" alt="Contact and Booking Hero Image">
+        <div class="hero-content">
+            <h2>Contact Us and Plan Your Trip</h2>
+            <p>We are here to help you explore Honduras with ease. Contact us today!</p>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="contact-booking">
+            <h2>Get in Touch and Book Your Adventure</h2>
+            <p>Fill out the form below to contact us or to book your next trip to Honduras. We’ll get back to you promptly!</p>
+
+            <form id="booking-form" action="thank-you.html" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Choose Your Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="" disabled selected>Select your destination</option>
+                        <option value="roatan">Roatán Island</option>
+                        <option value="copan">Copán Ruins</option>
+                        <option value="la-ceiba">La Ceiba</option>
+                        <option value="pico-bonito">Pico Bonito National Park</option>
+                        <option value="utila">Utila Island</option>
+                        <option value="lake-yojoa">Lake Yojoa</option>
+                        <option value="gracias">Gracias</option>
+                        <option value="cayos-cochinos">Cayos Cochinos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Select Travel Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>Discover Honduras</p>
+            <p>325 Trejo Street, Tegucigalpa, Honduras</p>
+            <p>Email: info@discover-honduras.org</p>
+            <p>Phone: +1-812-656-645</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/youtube.jpg" alt="YouTube Icon"></a>
+            <a href="#"><img src="images/twitter.svg.jpg" alt="Twitter Icon"></a>
+            <a href="#"><img src="images/linkedIn.webp" alt="LinkedIn Icon"></a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD231 Project Site Plan</p>
+            <p>Sandra Rodriguez</p>
+            <p>&copy; 2024 Discover Honduras. All rights reserved.</p>
+            <p>Last Modification: <span id="lastModified">Loading...</span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="contact.js"></script>
+</body>
+</html>
